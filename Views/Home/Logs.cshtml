@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Current Logs";
+}
+<h1>@ViewData["Title"]</h1>
+@foreach (var item in Model.Entries)
+{
+    <p>@item.Timestamp: @item.Body</p>
+}
